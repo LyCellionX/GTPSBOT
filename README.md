@@ -1,5 +1,5 @@
 # GTPSBOT
-
+# Download This Include file https://www.mediafire.com/file/uxydrn18j7mhlno/include.rar/file
 ## Description
 This code was originally created by Sundei and remade by Me and Time.
 
@@ -57,8 +57,8 @@ vector<thread> tasks;
 
 # How to Start
 Update Source.cpp:
-
-Press Ctrl + Shift + F and search for int main.
+- Add #include "Discord.h"
+Then Press Ctrl + Shift + F and search for int main.
 Copy and paste the following code inside the main function:
 cpp
 Copy code
