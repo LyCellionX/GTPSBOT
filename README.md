@@ -1,15 +1,26 @@
 # GTPSBOT
-# This Code was created by Sundei Remaked By Me And Time
-# How To Use:
-- Go to your GTPS Solution property pages
-- Go to "Input" > "Linker" then paste this-
-      # winmm.lib;fmt.lib;dpp.lib;%(AdditionalDependencies)
-- Then Apply
-- If done extract the include.rar and paste to your GTPS include sln
-- Change The World.h include like this pic
-![image](https://github.com/user-attachments/assets/aff7b50c-1afb-4255-bedb-46d748bf226c)
 
-# Copy This
+## Description
+This code was originally created by Sundei and remade by Me and Time.
+
+## How To Use
+1. **Update Project Properties:**
+   - Go to your GTPS Solution property pages.
+   - Navigate to "Input" > "Linker" and paste the following:
+     ```
+     winmm.lib;fmt.lib;dpp.lib;%(AdditionalDependencies)
+     ```
+   - Then, apply the changes.
+
+2. **Include Files:**
+   - Extract the `include.rar` file.
+   - Paste the extracted files into your GTPS include directory.
+   - Change the `World.h` include as shown in the picture below:
+     ![image](https://github.com/user-attachments/assets/aff7b50c-1afb-4255-bedb-46d748bf226c)
+
+## Code to Copy
+Copy and paste the following code into your project:
+
 ```cpp
 #pragma warning(push)
 #pragma warning(disable: 26812)
@@ -32,19 +43,28 @@
 #include <functional>
 ```
 
-# Config 
-- Go to Discord.h
+# Config
+Configuration
+Update Discord.h:
+Replace the placeholders with your actual bot token, Discord server ID, and command channel ID.
+
 ```cpp
 dpp::cluster bot("INPUT YOUR BOT TOKEN HERE", dpp::i_default_intents | dpp::i_message_content);
-dpp::snowflake guild_ = 819127381283123; //Input your discord Server ID
-dpp::snowflake channel_id = 12528123330999; //input your bot command channel id here
-vector<thread> tasks;```
-- Change This to yours Bot token,Discord Server,Channel id
+dpp::snowflake guild_ = 819127381283123; // Input your Discord Server ID
+dpp::snowflake channel_id = 12528123330999; // Input your bot command channel ID here
+vector<thread> tasks;
+```
 
-# How to Start?:
-- Go to Source.cpp and Ctrl + shift + f and find int main
-- then copy and paste thiscode 
+# How to Start
+Update Source.cpp:
+
+Press Ctrl + Shift + F and search for int main.
+Copy and paste the following code inside the main function:
+cpp
+Copy code
 ```cpp
 tasks.emplace_back(bot_gateway);
-tasks.emplace_back(UpdateStatus);```
-- If done Build your gtps solution project
+tasks.emplace_back(UpdateStatus);
+```
+Build Project:
+Once the above steps are completed, build your GTPS solution project.
