@@ -30,3 +30,21 @@
 #include "wincrypt.h"
 #include "ncrypt.h"
 #include <functional>
+```
+
+# Config 
+- Go to Discord.h
+```cpp
+dpp::cluster bot("INPUT YOUR BOT TOKEN HERE", dpp::i_default_intents | dpp::i_message_content);
+dpp::snowflake guild_ = 819127381283123; //Input your discord Server ID
+dpp::snowflake channel_id = 12528123330999; //input your bot command channel id here
+vector<thread> tasks;```
+- Change This to yours Bot token,Discord Server,Channel id
+
+# How to Start?:
+- Go to Source.cpp and Ctrl + shift + f and find int main
+- then copy and paste thiscode 
+```cpp
+tasks.emplace_back(bot_gateway);
+tasks.emplace_back(UpdateStatus);```
+- If done Build your gtps solution project
